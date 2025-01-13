@@ -2,7 +2,15 @@ import { strict as assert } from 'assert';
 import { employees } from '../data/employees.js';
 
 // Exercise 1: Write a function that returns an array with the email addresses of all employees using a common loop:
-export function getEmails(employees) {}
+export function getEmails(employees) {
+    const emails = [];
+
+    for (let i = 0; i < employees.length; i++) {
+        const employee = employees[i];
+        emails.push(employee.email);
+    }
+    return emails;
+}
 
 assert.deepEqual(
   [

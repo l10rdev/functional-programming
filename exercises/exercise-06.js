@@ -2,7 +2,9 @@
 
 import { strict as assert } from 'assert';
 
-function weekDays(dates) {}
+function weekDays(dates) {
+    return dates.map(date => date.toLocaleDateString('en-US', {weekday: 'long'}));
+}
 
 assert.deepEqual(
   ['Friday', 'Saturday', 'Sunday'],
