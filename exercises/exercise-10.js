@@ -1,4 +1,5 @@
 import assert from 'node:assert';
+import {employees} from "../data/employees.js";
 
 // Exercise 10: Write a function that return the number of employees in each Department.
 function employeesPerDepartment(employees) {}
